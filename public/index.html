@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Management Full Stack Project</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar">
+      <h2>StudentDB</h2>
+      <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
+        <a href="/services">Services</a>
+      </div>
+    </nav>
+
+    <div class="hero">
+      <h1>Full Stack Student Management Project</h1>
+      <p>Built with Node.js, Express.js, MongoDB, Mongoose, and Postman-ready APIs.</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Add Student</h2>
+      <form id="studentForm">
+        <input type="text" id="name" placeholder="Student Name" required />
+        <input type="email" id="email" placeholder="Student Email" required />
+        <input type="number" id="age" placeholder="Student Age" required />
+        <button type="submit">Add Student</button>
+      </form>
+      <p id="message"></p>
+    </section>
+
+    <section class="card">
+      <div class="section-heading">
+        <h2>All Students</h2>
+        <button id="refreshBtn">Refresh</button>
+      </div>
+      <div id="studentList" class="student-list"></div>
+    </section>
+
+    <section class="card api-card">
+      <h2>Postman API Routes</h2>
+      <ul>
+        <li><strong>GET</strong> /students</li>
+        <li><strong>POST</strong> /students</li>
+        <li><strong>PUT</strong> /students</li>
+        <li><strong>DELETE</strong> /students</li>
+        <li><strong>POST</strong> /add-student</li>
+        <li><strong>GET</strong> /api/students</li>
+        <li><strong>POST</strong> /api/students</li>
+        <li><strong>PUT</strong> /api/students/:id</li>
+        <li><strong>DELETE</strong> /api/students/:id</li>
+      </ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
