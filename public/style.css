@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f7fb;
+  color: #222;
+}
+
+.header {
+  background: linear-gradient(135deg, #1d4ed8, #0f172a);
+  color: white;
+  padding-bottom: 60px;
+}
+
+.navbar {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 22px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-links {
+  display: flex;
+  gap: 18px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.hero {
+  max-width: 900px;
+  margin: 60px auto 0;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.hero h1 {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+.container {
+  max-width: 1100px;
+  margin: -40px auto 50px;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 22px;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 12px 35px rgba(15, 23, 42, 0.12);
+}
+
+.card h2 {
+  margin-bottom: 18px;
+  color: #0f172a;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+input {
+  padding: 13px;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+button {
+  padding: 12px 16px;
+  border: none;
+  border-radius: 10px;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+#message {
+  margin-top: 12px;
+  font-weight: 600;
+}
+
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.student-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.student-item {
+  padding: 15px;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  background: #f8fafc;
+}
+
+.student-item h3 {
+  margin-bottom: 6px;
+}
+
+.student-actions {
+  margin-top: 12px;
+}
+
+.delete-btn {
+  background: #dc2626;
+}
+
+.delete-btn:hover {
+  background: #b91c1c;
+}
+
+.api-card {
+  grid-column: 1 / -1;
+}
+
+.api-card ul {
+  padding-left: 20px;
+  line-height: 1.9;
+}
+
+@media (max-width: 768px) {
+  .navbar,
+  .nav-links {
+    flex-direction: column;
+  }
+
+  .hero h1 {
+    font-size: 30px;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
